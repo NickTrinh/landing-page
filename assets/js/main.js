@@ -4,6 +4,32 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+function toggleDetails(id, button) {
+	var details = document.getElementById(id);
+	if (details.style.display === "none") {
+		details.style.display = "block";
+		button.innerHTML = "See less";
+	} else {
+		details.style.display = "none";
+		button.innerHTML = "See more";
+	}
+}
+
+function toggleProjects(button) {
+	var moreProjects = document.querySelectorAll('.more-projects'); // Get all elements with class 'more-projects'
+
+	// Determine the current state based on the first element
+	var shouldShow = moreProjects[0].style.display === "none" || moreProjects[0].style.display === "";
+
+	moreProjects.forEach(project => {
+		// Toggle the display state of each 'more-projects' element
+		project.style.display = shouldShow ? "block" : "none";
+	});
+
+	// Update the button text based on the determined action
+	button.innerHTML = shouldShow ? "See less" : "See more";
+}
+
 (function($) {
 
 	var	$window = $(window),
