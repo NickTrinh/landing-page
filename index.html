@@ -1,183 +1,272 @@
 <!DOCTYPE HTML>
-<!--
-	Solid State by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
-	<head>
-		<title>Solid State by HTML5 UP</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<head>
+    <title>Nick Trinh's page</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+<body class="is-preload">
 
-		<!-- Page Wrapper -->
-			<div id="page-wrapper">
+    <!-- Page Wrapper -->
+    <div id="page-wrapper">
 
-				<!-- Header -->
-					<header id="header" class="alt">
-						<h1><a href="index.html">Solid State</a></h1>
-						<nav>
-							<a href="#menu">Menu</a>
-						</nav>
-					</header>
+        <!-- Banner -->
+        <section id="banner" class="section">
+            <div class="inner">
+                <div class="logo"><span class="icon fa-gem"></span></div>
+                <h2>Nick Trinh</h2>
+                <h3>
+					<ul class="alt">
+						<li>AI Engineer Intern @ Rainscales</li>
+						<li>SWE Fellow @ Headstarter.ai</li>
+						<li>Math & CS Student @ Fordham University</li>
+					</ul>
+				</h3>
+                <ul class="actions">
+                    <li><a href="#" class="button primary" onclick="showResume()">View Resume</a></li>
+                </ul>
+            </div>
+        </section>
 
-				<!-- Menu -->
-					<nav id="menu">
-						<div class="inner">
-							<h2>Menu</h2>
-							<ul class="links">
-								<li><a href="index.html">Home</a></li>
-								<li><a href="generic.html">Generic</a></li>
-								<li><a href="elements.html">Elements</a></li>
-								<li><a href="#">Log In</a></li>
-								<li><a href="#">Sign Up</a></li>
-							</ul>
-							<a href="#" class="close">Close</a>
-						</div>
-					</nav>
+        <!-- Wrapper -->
+        <section id="wrapper" class="section">
 
-				<!-- Banner -->
-					<section id="banner">
-						<div class="inner">
-							<div class="logo"><span class="icon fa-gem"></span></div>
-							<h2>Nick Trinh</h2>
-							<p>Another free + fully responsive site template by <a href="http://html5up.net">HTML5 UP</a></p>
-						</div>
-					</section>
+            <!-- One -->
+            <section id="one" class="wrapper spotlight style1">
+                <div class="inner">
+                    <a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
+                    <div class="content">
+                        <h2 class="major">About Me</h2>
+                        <p>I'm a passionate Mathematics and Computer Science major at Fordham University, expected to graduate in May 2027. With a strong academic background and hands-on experience in various fields such as Artificial Intelligence, Robotics, Computer Vision, and Web Development, I'm driven to innovate and solve complex problems using technology and AI.</p>
+                    </div>
+                </div>
+            </section>
 
-				<!-- Wrapper -->
-					<section id="wrapper">
+            <!-- Two -->
+            <section id="two" class="wrapper alt spotlight style2">
+                <div class="inner">
+                    <a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
+                    <div class="content">
+                        <h2 class="major">Work Experience</h2>
+                        <h3>AI Engineer Intern at Rainscales (Jun 2024 - present)</h3>
+                        <p>During my summer internship at Rainscales, I had the exciting opportunity to dive deep into the world of AI and computer vision. My main project was to develop an AI model that could track and count workers, with a specific focus on identifying those who had undergone alcohol testing.</p>
+                        <div id="rainscales-details" style="display: none;">
+                            <ul>
+                                <li>Developed an AI model using cutting-edge technologies: YOLOv8 for object detection, ByteTrack for object tracking, and PyTorch as the underlying framework.</li>
+                                <li>Achieved an impressive 94.3% precision in detecting alcohol-tested workers, significantly improving workplace safety measures.</li>
+                                <li>Deployed the model on a Triton Inference Server, ensuring efficient and scalable inference in production environments.</li>
+                                <li>Built a user-friendly interface using Gradio, making it easy for non-technical staff to interact with the AI system.</li>
+                                <li>Containerized the entire application using Docker, streamlining deployment and ensuring consistency across different environments.</li>
+                            </ul>
+                        </div>
+                        <button onclick="toggleDetails('rainscales-details', this)">See more</button>
 
-						<!-- One -->
-							<section id="one" class="wrapper spotlight style1">
-								<div class="inner">
-									<a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
-									<div class="content">
-										<h2 class="major">Magna arcu feugiat</h2>
-										<p>Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.</p>
-										<a href="#" class="special">Learn more</a>
-									</div>
-								</div>
-							</section>
+						<div style="margin-bottom: 40px;"></div>
 
-						<!-- Two -->
-							<section id="two" class="wrapper alt spotlight style2">
-								<div class="inner">
-									<a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
-									<div class="content">
-										<h2 class="major">Tempus adipiscing</h2>
-										<p>Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.</p>
-										<a href="#" class="special">Learn more</a>
-									</div>
-								</div>
-							</section>
+						<h3>Research Assistant at Fordham Robotics & Computer Vision Lab <br>(Feb 2024 - present)</br></h3>
+                        <p>As a Research Assistant at Fordham's Robotics & Computer Vision Lab, I've been immersing myself in the fascinating world of robotics and AI. This role has been instrumental in bridging the gap between theoretical knowledge and practical application.</p>
+                        <div id="fordham-details" style="display: none;">
+                            <ul>
+                                <li>Assembled and programmed VEX Robot systems, gaining hands-on experience with complex robotic platforms.</li>
+                                <li>Utilized ROS (Robot Operating System) and C++ to develop software for the robots, enhancing my skills in both robotics middleware and programming.</li>
+                                <li>Contributed to ongoing research activities, including a project on visual homing for autonomous robots.</li>
+                                <li>Assisted in setting up experimental environments and conducting tests, honing my skills in scientific methodology and data analysis.</li>
+                                <li>Collaborated with fellow researchers and faculty members, fostering a deeper understanding of current trends and challenges in robotics and computer vision.</li>
+                            </ul>
+                        </div>
+						<button onclick="toggleDetails('fordham-details', this)">See more</button>
 
-						<!-- Three -->
-							<section id="three" class="wrapper spotlight style3">
-								<div class="inner">
-									<a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
-									<div class="content">
-										<h2 class="major">Nullam dignissim</h2>
-										<p>Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.</p>
-										<a href="#" class="special">Learn more</a>
-									</div>
-								</div>
-							</section>
+						<div style="margin-bottom: 40px;"></div>
 
-						<!-- Four -->
-							<section id="four" class="wrapper alt style1">
-								<div class="inner">
-									<h2 class="major">Vitae phasellus</h2>
-									<p>Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.</p>
-									<section class="features">
-										<article>
-											<a href="#" class="image"><img src="images/pic04.jpg" alt="" /></a>
-											<h3 class="major">Sed feugiat lorem</h3>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
-											<a href="#" class="special">Learn more</a>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic05.jpg" alt="" /></a>
-											<h3 class="major">Nisl placerat</h3>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
-											<a href="#" class="special">Learn more</a>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic06.jpg" alt="" /></a>
-											<h3 class="major">Ante fermentum</h3>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
-											<a href="#" class="special">Learn more</a>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
-											<h3 class="major">Fusce consequat</h3>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
-											<a href="#" class="special">Learn more</a>
-										</article>
-									</section>
-									<ul class="actions">
-										<li><a href="#" class="button">Browse All</a></li>
-									</ul>
-								</div>
-							</section>
+						<h3>Software Engineer Fellow at Headstarter.ai <br>(July 2024 - present)</br></h3>
+                        <p>Throughout the duration of this 7-week fellowship, I will be building 5 AI projects and honing my skills through project collaboration, meeting deadlines, and developing a product from the beginning to deployment. I will also have the opportunity to build my personal brand, network, and interview as well as sales skills!</p>
+                        <div id="headstarter-details" style="display: none;">
+                            <ul>
+                                <li>Created this portfolio website using HTML, CSS, and DNS</li>
+                            </ul>
+                        </div>
+						<button onclick="toggleDetails('headstarter-details', this)">See more</button>
+					
+                    </div>
+                </div>
+            </section>
 
-					</section>
+            <!-- Three -->
+            <section id="three" class="wrapper spotlight style3">
+                <div class="inner">
+                    <div class="content">
+                        <h2 class="major">Skills & Technologies</h2>
+                        <div class="row" style="line-height: 1.2;">
+                            <div class="col-6 col-12-medium">
+                                <h3>Programming Languages</h3>
+                                <p>C/C++, Python, JavaScript, HTML/CSS</p>
+                            </div>
+                            <div class="col-6 col-12-medium">
+                                <h3>AI & ML</h3>
+                                <p>TensorFlow, PyTorch, OpenCV, NumPy, YOLO</p>
+                            </div>
+                        </div>
+                        <div class="row" style="line-height: 1.2;">
+                            <div class="col-6 col-12-medium">
+                                <h3>Cloud & DevOps</h3>
+                                <p>AWS, Azure, Docker, Git, Linux CLI</p>
+                            </div>
+                            <div class="col-6 col-12-medium">
+                                <h3>Other Technologies</h3>
+                                <p>Flutter, FastAPI, Gradio, ROS, Arduino</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-				<!-- Footer -->
-					<section id="footer">
-						<div class="inner">
-							<h2 class="major">Get in touch</h2>
-							<p>Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.</p>
-							<form method="post" action="#">
-								<div class="fields">
-									<div class="field">
-										<label for="name">Name</label>
-										<input type="text" name="name" id="name" />
-									</div>
-									<div class="field">
-										<label for="email">Email</label>
-										<input type="email" name="email" id="email" />
-									</div>
-									<div class="field">
-										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="4"></textarea>
-									</div>
-								</div>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
-								</ul>
-							</form>
-							<ul class="contact">
-								<li class="icon solid fa-home">
-									Untitled Inc<br />
-									1234 Somewhere Road Suite #2894<br />
-									Nashville, TN 00000-0000
-								</li>
-								<li class="icon solid fa-phone">(000) 000-0000</li>
-								<li class="icon solid fa-envelope"><a href="#">information@untitled.tld</a></li>
-								<li class="icon brands fa-twitter"><a href="#">twitter.com/untitled-tld</a></li>
-								<li class="icon brands fa-facebook-f"><a href="#">facebook.com/untitled-tld</a></li>
-								<li class="icon brands fa-instagram"><a href="#">instagram.com/untitled-tld</a></li>
-							</ul>
-							<ul class="copyright">
-								<li>&copy; Untitled Inc. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-							</ul>
-						</div>
-					</section>
+            <!-- Four -->
+            <section id="four" class="wrapper alt style1">
+                <div class="inner">
+                    <h2 class="major">Projects</h2>
+                    <p>Here are some of the exciting projects I've worked on. This is where I honed my skills in software development and problem-solving.</p>
+                    <section class="features">
+                        <article>
+                            <a href="#" class="image"><img src="images/pic04.jpg" alt="" /></a>
+                            <h3 class="major">LinguaWealth</h3>
+                            <p>AI-powered assistant for wealth advisors. Won 3rd place in UBS Pitch Competition 2024. Integrated AWS, Azure, and ChatGPT API for real-time voice transcription, translation, and analysis.</p>
+                            <a href="#" class="special">Learn more</a>
+                        </article>
+                        <article>
+                            <a href="#" class="image"><img src="images/pic05.jpg" alt="" /></a>
+                            <h3 class="major">Smart Gardening Project</h3>
+                            <p>Automatic watering and feeding system for household gardens using Arduino, various sensors, and a user-friendly app with integrated chatbot.</p>
+                            <a href="#" class="special">Learn more</a>
+                        </article>
+						<article class="more-projects" style="display: none;">
+							<a href="#" class="image"><img src="images/pic06.jpg" alt="" /></a>
+							<h3 class="major">Chemical Detection System</h3>
+							<p>Arduino-based solution for domestic water safety, enhancing community awareness on local water pollution.</p>
+							<a href="#" class="special">Learn more</a>
+						</article>
+						<article class="more-projects" style="display: none;">
+							<a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
+							<h3 class="major">Safe Motorcycle Ignition System</h3>
+							<p>Arduino-based system to prevent drunk driving, increasing road safety and spreading awareness on alcohol-related accidents.</p>
+							<a href="#" class="special">Learn more</a>
+						</article>
+                    </section>
+                    <ul class="actions">
+                        <li><a class="button" onclick="toggleProjects(this)">See more</a></li>
+                    </ul>
+                </div>
+            </section>
 
-			</div>
+            <!-- Five -->
+            <section id="five" class="wrapper style1">
+                <div class="inner">
+                    <h2 class="major">Education</h2>
+                    <p>My academic journey at Fordham University has provided me with a strong foundation in Computer Science and Mathematics.</p>
+                    <div class="table-wrapper">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Degree</th>
+                                    <th>Institution</th>
+                                    <th>Expected Graduation</th>
+                                    <th>Cumulative GPA</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>BSc in Mathematics and Computer & Information Sciences</td>
+                                    <td>Fordham College at Rose Hill -- Fordham University</td>
+                                    <td>May 2027</td>
+                                    <td>3.71</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 col-12-medium">
+                            <h3>Key Coursework</h3>
+                            <ul>
+                                <li>Computer Science I (Introduction to Computer Science)</li>
+                                <li>Computer Science II (Object-Oriented Programming)</li>
+                                <li>Discrete Structures</li>
+                                <li>Calculus I & II</li>
+                                <li>Discrete Mathematics</li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-12-medium">
+                            <h3>Honors & Awards</h3>
+                            <ul>
+                                <li>Fordham Faber Award ($57,100/year)</li>
+                                <li>Dean's List</li>
+                                <li>Best Overall Team in Fordham CS Society Hackathon</li>
+                                <li>UBS 2024 Pitch Competition (3rd Place, $2,500 prize)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+        </section>
 
-	</body>
+        <!-- Footer -->
+        <section id="footer" class="section">
+            <div class="inner">
+                <h2 class="major">Get in touch</h2>
+                <p>I'm always open to new opportunities and collaborations. Feel free to reach out!</p>
+                <ul class="contact">
+                    <li class="icon solid fa-home">
+                        New York, NY<br />
+                        United States
+                    </li>
+                    <li class="icon solid fa-envelope"><a href="#">ntrinhvanminh@fordham.edu</a></li>
+                    <li class="icon brands fa-github"><a href="https://github.com/NickTrinh">github.com/NickTrinh</a></li>
+                    <li class="icon brands fa-linkedin"><a href="https://linkedin.com/in/nicktrinh">linkedin.com/in/nicktrinh</a></li>
+                </ul>
+                <ul class="copyright">
+                    <li>&copy; Nick Trinh. All rights reserved.</li>
+                    <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                </ul>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        function toggleDetails(id, button) {
+            var details = document.getElementById(id);
+            if (details.style.display === "none") {
+                details.style.display = "block";
+                button.innerHTML = "See less";
+            } else {
+                details.style.display = "none";
+                button.innerHTML = "See more";
+            }
+        }
+
+        function toggleProjects(button) {
+			var moreProjects = document.querySelectorAll('.more-projects'); // Get all elements with class 'more-projects'
+
+			// Determine the current state based on the first element
+			var shouldShow = moreProjects[0].style.display === "none" || moreProjects[0].style.display === "";
+
+			moreProjects.forEach(project => {
+				// Toggle the display state of each 'more-projects' element
+				project.style.display = shouldShow ? "block" : "none";
+			});
+
+			// Update the button text based on the determined action
+			button.innerHTML = shouldShow ? "See less" : "See more";
+		}
+    </script>
+
+</body>
 </html>
