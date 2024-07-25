@@ -4,53 +4,6 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-// Get the button
-var mybutton = document.getElementById("scrollToTopBtn");
-
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {
-	scrollFunction();
-};
-
-function scrollFunction() {
-	if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-		mybutton.style.display = "block";
-	} else {
-		mybutton.style.display = "none";
-	}
-}
-
-// When the user clicks on the button, scroll to the top of the document
-mybutton.addEventListener("click", function() {
-	window.scrollTo({top: 0, behavior: 'smooth'});
-});
-
-function toggleDetails(id, button) {
-	var details = document.getElementById(id);
-	if (details.style.display === "none") {
-		details.style.display = "block";
-		button.innerHTML = "See less";
-	} else {
-		details.style.display = "none";
-		button.innerHTML = "See more";
-	}
-}
-
-function toggleProjects(button) {
-	var moreProjects = document.querySelectorAll('.more-projects'); // Get all elements with class 'more-projects'
-
-	// Determine the current state based on the first element
-	var shouldShow = moreProjects[0].style.display === "none" || moreProjects[0].style.display === "";
-
-	moreProjects.forEach(project => {
-		// Toggle the display state of each 'more-projects' element
-		project.style.display = shouldShow ? "block" : "none";
-	});
-
-	// Update the button text based on the determined action
-	button.innerHTML = shouldShow ? "See less" : "See more";
-}
-
 (function($) {
 
 	var	$window = $(window),
@@ -190,3 +143,67 @@ function toggleProjects(button) {
 			});
 
 })(jQuery);
+
+// Get the button
+var toTopButton = document.getElementById("scrollToTopBtn");
+
+// When the user clicks on the button, scroll to the top of the document
+toTopButton.addEventListener("click", function() {
+	window.scrollTo({top: 0, behavior: 'smooth'});
+});
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {
+	scrollFunction();
+};
+
+function scrollFunction() {
+	if (document.documentElement.scrollTop > 1000) {
+		toTopButton.style.display = "block";
+	} else {
+		toTopButton.style.display = "none";
+	}
+}
+
+function toggleDetails(id, button) {
+	var details = document.getElementById(id);
+	if (details.style.display === "none") {
+		details.style.display = "block";
+		button.innerHTML = "See less";
+	} else {
+		details.style.display = "none";
+		button.innerHTML = "See more";
+	}
+}
+
+function toggleProjects(button) {
+	var moreProjects = document.querySelectorAll('.more-projects'); // Get all elements with class 'more-projects'
+
+	// Determine the current state based on the first element
+	var shouldShow = moreProjects[0].style.display === "none" || moreProjects[0].style.display === "";
+
+	moreProjects.forEach(project => {
+		// Toggle the display state of each 'more-projects' element
+		project.style.display = shouldShow ? "block" : "none";
+	});
+
+	// Update the button text based on the determined action
+	button.innerHTML = shouldShow ? "See less" : "See more";
+}
+
+function fadeInOnScroll() {
+    var elements = document.querySelectorAll('.fade-in');
+
+    for (var i = 0; i < elements.length; i++) {
+        var element = elements[i];
+
+        if (element.getBoundingClientRect().top < window.innerHeight && element.getBoundingClientRect().bottom >= 0) {
+            element.classList.add('visible');
+        } else {
+            element.classList.remove('visible');
+        }
+    }
+}
+
+window.addEventListener('scroll', fadeInOnScroll);
+window.addEventListener('load', fadeInOnScroll); // Check on load in case elements are already in view
